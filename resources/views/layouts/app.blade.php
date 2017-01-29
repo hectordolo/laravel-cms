@@ -8,10 +8,14 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Laravel-CMS') }}</title>
 
-    <!-- Styles -->
-    <link href="/css/app.css" rel="stylesheet">
+    <!-- bootstrap css-->
+    <link rel="stylesheet" type="text/css"  href="vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"  href="vendors/bootstrap/css/bootstrap-theme.min.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="vendors/font-awesome/css/font-awesome.min.css">
 
     <!-- Scripts -->
     <script>
@@ -81,7 +85,16 @@
         @yield('content')
     </div>
 
-    <!-- Scripts -->
-    <script src="/js/app.js"></script>
+    <!-- jquery -->
+    <script type="text/javascript" src="vendors/jquery/js/jquery-3.1.1.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- jquery -->
+    <script type="text/javascript" src="vendors/smooth-scroll/js/smooth-scroll.js"></script>
+
 </body>
 </html>
+
+
